@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name = "format-detection" content = "telephone=no">
+<title>2019年北京市社区工作者面试视频_中公社区工作者考试网</title>
+<meta name="keywords" content="2019年北京市社区工作者面试备考视频,北京市社区考场还原">
+<meta name="description" content="【中公社区工作者考试网】提供2019年北京市社区工作者面试考试资料，包括北京市社区考场还原学习视频，北京市社区考试备考视频，更多北京市社区备考资料，就在中公社区工作者考试网。">
+<link href="wapcss/index.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="wapjs/jquery.min.js"></script>
+<script type="text/javascript" src="wapjs/2018yzmjs.js" charset="gb2312"></script>
+<script>	
+	var deviceWidth = document.documentElement.clientWidth;
+	if(deviceWidth > 750) deviceWidth = 750;
+	document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+window.onresize=function(){
+	var deviceWidth = document.documentElement.clientWidth;
+	if(deviceWidth > 750) deviceWidth = 750;
+	document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+	
+};
+</script>
+<script language="javascript" src="http://www.offcn.com/statics/js/sdc_offcn_wap.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c9d7d5560f329de6a5f884082cb506fa";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+<h1 style="display:none;">2019年北京市社区工作者面试备考视频</h1>
+<div class="zg_box">
+	<div class="header">
+        <a href="http://bj.zgjcks.com/shequ/"><img src="wapimages/logo.png" alt="中公社区工作者考试网" class="logo"></a>
+        <a onClick="if (window._tag){_tag.dcsMultiTrack('wt.mtel','phone');}" href="tel:4006300999" title="010-51657188" class="tel">010-51657188</a>
+    </div>
+	<div class="zg_banner">
+		<img src="wapimages/ban1.jpg" alt="中公社区工作者考试网">
+	</div>
+	<div class="zg_onepart">
+		<div class="shipin">
+			<div class="look">
+				<video src="http://gcik47gyt746q6nqdze.exp.bcevod.com/mda-jftqv0w35g7zbnhc/src/src-mda-jftqv0w35g7zbnhc.mp4"  autoplay="autoplay" id="video" controls>
+					请升级新版浏览器后再观看
+				</video>
+			</div>
+		</div>
+	</div>
+	<div class="cover">
+		<div class="form">
+		<form action="" method="post" name="wzsqkchy19"  accept-charset="gb2312">
+			<input type="hidden" name="info[name]" value="无">
+			<p class="first">手机号：<input type="text" name="info[tel]" id="tel"></p>
+			<p class="two">验证码：<input type="text" name="info[yzm]" id="yzm">
+			<a href="javascript:;" id="getyzm" class="yzm_btn" data="1215">获取验证码</a><span id="daojishi" class="yzm_btn" style="display:none;"></span></p>
+			<input type="hidden" name="info[area]" id="area">
+			<input type="button" name="dosubmit" class="dosubmit" value="观看完整视频">
+		</form>
+	</div>
+
+<script type="text/javascript">
+    var flag = false
+    $().ready(function(){
+    	var video = document.getElementById('video');
+		//使用事件监听方式捕捉事件
+		video.addEventListener("timeupdate",function(){
+		    var timeDisplay;
+			//用秒数来显示当前播放进度
+			timeDisplay = Math.floor(video.currentTime);
+		    //当视频播放到 4s的时候做处理
+			if(timeDisplay >= 180 && !flag){
+			    $(".cover").fadeIn();
+			    video.pause();
+			    $(".look").hide();
+			    video.currentTime = 180;
+			}else if(flag){
+				 $(".cover").hide();
+				 $(".look").fadeIn();
+				 video.play();
+			}
+		},false);
+
+		var area = GetQueryString("area");
+	    if(area !=null && area.toString().length>1){
+	        area = GetQueryString("area");
+	    }else{
+	        area = "cq";
+	    }
+	    $("#area").val(area);
+	});
+
+ $('.dosubmit').click(function(){
+		var info = {};
+		info.tel=$('#tel').val()
+		info.yzm=$('#yzm').val()
+		if(info.yzm == '') {
+			alert('请输入验证码');
+			return false;
+		}
+		if(info.tel == '') { //验证手机号是否为空
+			alert('请填写手机号');
+			return false;
+		}
+		var reg = /^0?1[3456789]\d{9}$/; //手机号正则
+		if(!reg.test(info.tel)) { //验证手机号是否正确
+			alert('请填写正确的手机号!');
+			return false;
+		}
+		$.ajax({
+			url:"http:///www.zgjcks.com/index.php?m=formguide&c=forms&a=show&formid=1215&action=jsonp&siteid=5&verify=true",
+			data: {info},
+			dataType:"jsonp",
+			type:"GET",
+			success:function(json){
+				if(json.status == 1){
+					// crm调用导入crm
+					// $.get("http://dc.offcn.com:8100/a.gif", {sid:'26d9c91cccf9f2aebbc40b28fb08e6c7', mobile:info.tel, name:info.name})
+					alert("提交成功");
+					// $(".cover").hide()
+					 // $(".look").fadeIn();
+					 flag = true
+					// $("video").get(0).play()
+				}else if(json.status==-2){
+					flag = false
+					alert("验证码错误");
+					$('#getyzm').show();
+					$('#daojishi').hide();
+				}else if(json.status == -1){
+					flag = true
+					alert("请勿重复提交");
+					$('#getyzm').show();
+					$('#daojishi').hide();
+					// $(".cover").hide()
+					// $(".look").fadeIn();
+					// $("video").get(0).play()
+				}
+			}
+		})
+	});
+
+
+
+    function GetQueryString(name){
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+	}
+</script>
+</div>
+<script language="javascript" src="http://www.offcn.com/statics/js/bdbot.js"></script>
+<script type="text/javascript" src="http://www.offcn.com/statics/js/bdtj_cq.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1386f34fadcd55cbd059cc917e8848ae";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
